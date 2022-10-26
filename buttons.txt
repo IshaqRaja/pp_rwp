@@ -1,0 +1,48 @@
+Link:
+https://www.fluttercampus.com/guide/77/how-to-set-notched-floating-action-button-in-bottom-navigation-bar/#:~:text=By%20default%2C%20the%20shape%20of,and%20FloatingActionButton()%20widget%20class.
+
+      floatingActionButton: FloatingActionButton(
+        onPressed: (){
+          Navigator.push(context, MaterialPageRoute(builder: (context) => const FabButton()),
+          );
+        //onTabTapped(0);
+        },
+        tooltip: "Add saving",
+        child: const Icon(Icons.attach_money, color: Colors.indigo),
+        elevation: 4.0,
+        backgroundColor: Colors.white,
+      ),
+      floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
+      bottomNavigationBar: Theme(
+        data: Theme.of(context).copyWith(
+          canvasColor: Colors.green,
+            textTheme: Theme
+                .of(context)
+                .textTheme
+                .copyWith(caption: const TextStyle(color: Colors.yellow))),
+        child: BottomNavigationBar(
+          backgroundColor: Colors.black,
+          items:  const <BottomNavigationBarItem>[
+            BottomNavigationBarItem(
+              icon: Icon(Icons.home),
+              label: ("Home"),
+            ),
+            BottomNavigationBarItem(
+              icon: Icon(Icons.business),
+              label: ("Business"),
+            ),
+           BottomNavigationBarItem(
+              icon: Icon(Icons.attach_money),
+              label: ("Save"),
+            ),
+             BottomNavigationBarItem(
+              icon: Icon(Icons.school),
+              label: ("School"),
+            ),
+            BottomNavigationBarItem(
+              icon: Icon(Icons.school  ),
+              label: ("School"),
+            ),
+          ],
+        ),
+      ),
