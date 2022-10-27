@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'button_pages/hoteleye_page.dart';
 import 'homepage.dart';
 
 void main() {
@@ -19,7 +20,7 @@ class MyApp extends StatelessWidget {
           textTheme: TextTheme(
             bodyText2: GoogleFonts.quicksand(fontSize: 14.0),
           )),
-      home: const HomePage(),
+      home: const HotelEyePage(),
     );
   }
 }

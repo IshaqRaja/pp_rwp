@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'button_pages/hoteleye_page.dart';
+
 class HomePage extends StatefulWidget {
   const HomePage({Key? key}) : super(key: key);
   @override
@@ -163,7 +165,11 @@ class _HomePageState extends State<HomePage> {
         ],
       ),
       floatingActionButton: FloatingActionButton(
-        onPressed: () {},
+        onPressed: () {
+          Navigator.push(
+              context, MaterialPageRoute(
+              builder: (BuildContext context) => const HotelEyePage()));
+        },
         child: const Icon(Icons.send),
       ),
       floatingActionButtonLocation:
