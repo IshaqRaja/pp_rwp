@@ -1,15 +1,12 @@
 import 'package:flutter/material.dart';
-import 'fab_button.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({Key? key}) : super(key: key);
-
   @override
   State<HomePage> createState() => _HomePageState();
 }
 
-  class _HomePageState extends State<HomePage> {
-
+class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -70,59 +67,69 @@ class HomePage extends StatefulWidget {
                           )),
                         )),
                     const SizedBox(
-                      height: 20,
+                      height: 1,
                     ),
                     Container(
                       width: 500,
                       height: 180,
-                      decoration: const BoxDecoration(
-                        image: DecorationImage(
+                      decoration: BoxDecoration(
+                        image: const DecorationImage(
                           image: AssetImage('assets/image1.jpg'),
                           //fit: BoxFit.fitWidth,
                         ),
                         // gradient: const LinearGradient(
                         //   colors: [Colors.red, Colors.pink],
                         // ),
-                        // borderRadius: BorderRadius.circular(12),
+                        borderRadius: BorderRadius.circular(40),
                       ),
                     ),
                     const SizedBox(
-                      height: 20,
+                      height: 1,
                     ),
                     Container(
                       width: 500,
                       height: 180,
                       decoration: BoxDecoration(
-                        gradient: const LinearGradient(
-                          colors: [Colors.red, Colors.pink],
+                        image: const DecorationImage(
+                          image: AssetImage("assets/image2.jpg"),
+                          fit: BoxFit.fitWidth,
                         ),
-                        borderRadius: BorderRadius.circular(12),
+                        // gradient: const LinearGradient(
+                        //   colors: [Colors.red, Colors.pink],
+                        // ),
+                        borderRadius: BorderRadius.circular(40),
                       ),
                     ),
                     const SizedBox(
-                      height: 20,
+                      height: 1,
                     ),
                     Container(
                       width: 500,
                       height: 180,
                       decoration: BoxDecoration(
-                        gradient: const LinearGradient(
-                          colors: [Colors.red, Colors.pink],
+                        image: const DecorationImage(
+                          image: AssetImage("assets/image3.png"),
                         ),
-                        borderRadius: BorderRadius.circular(12),
+                        // gradient: const LinearGradient(
+                        //   colors: [Colors.red, Colors.pink],
+                        // ),
+                        borderRadius: BorderRadius.circular(40),
                       ),
                     ),
                     const SizedBox(
-                      height: 20,
+                      height: 1,
                     ),
                     Container(
                       width: 500,
                       height: 180,
                       decoration: BoxDecoration(
-                        gradient: const LinearGradient(
-                          colors: [Colors.red, Colors.pink],
+                        image: const DecorationImage(
+                          image: AssetImage("assets/images4.jpg"),
                         ),
-                        borderRadius: BorderRadius.circular(12),
+                        // gradient: const LinearGradient(
+                        //   colors: [Colors.red, Colors.pink],
+                        // ),
+                        borderRadius: BorderRadius.circular(40),
                       ),
                     ),
                     // const Text(
@@ -144,10 +151,10 @@ class HomePage extends StatefulWidget {
                         borderRadius: BorderRadius.circular(12),
                       ),
                     ),
-                    const Text(
-                      "Hey there,\n This is dummy site for testing its Responsiveness",
-                      style: TextStyle(fontSize: 22),
-                    ),
+                    // const Text(
+                    //   "Hey there,\n This is dummy site for testing its Responsiveness",
+                    //   style: TextStyle(fontSize: 22),
+                    // ),
                   ],
                 );
               }
