@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'button_pages/hoteleye_page.dart';
+import 'hoteleye_page.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({Key? key}) : super(key: key);

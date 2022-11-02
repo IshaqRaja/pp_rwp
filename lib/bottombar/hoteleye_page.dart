@@ -5,7 +5,6 @@ class HotelEyePage extends StatefulWidget {
   @override
   State<HotelEyePage> createState() => _HotelEyePageState();
 }
-
 class _HotelEyePageState extends State<HotelEyePage> {
   @override
   Widget build(BuildContext context) {
