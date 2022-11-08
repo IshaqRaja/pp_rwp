@@ -20,7 +20,7 @@ class MyApp extends StatelessWidget {
           textTheme: TextTheme(
             bodyText2: GoogleFonts.quicksand(fontSize: 14.0),
           )),
-      home: const ServicePage(),
+      home: const HomePage(),
     );
   }
 }

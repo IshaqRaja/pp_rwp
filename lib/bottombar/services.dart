@@ -34,8 +34,8 @@ const ServicePage({Key? key}) : super(key: key);
           Container(
             height: 500,
             width: 500,
-            padding: const EdgeInsets.only(top: 30),
-            alignment: Alignment.topCenter,
+            // padding: const EdgeInsets.only(top: 30),
+            // alignment: Alignment.topCenter,
             decoration: BoxDecoration(
               color: Colors.purple,
               borderRadius: BorderRadius.circular(20),
