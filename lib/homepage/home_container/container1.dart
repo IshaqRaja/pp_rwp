@@ -1,4 +1,3 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class Container1 extends StatelessWidget {
@@ -8,14 +7,15 @@ class Container1 extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
         width: 500,
-        height: 200,
+        height: 100,
         decoration: BoxDecoration(
-          gradient:  const LinearGradient(
-            colors: [Colors.red, Colors.pink],
-          ),
-          borderRadius: BorderRadius.circular(12),
+          // gradient:  const LinearGradient(
+          //   colors: [Colors.green, Colors.blue],
+          //  ),
+          borderRadius: BorderRadius.circular(50),
         ),
         child: Scaffold(
+          backgroundColor: Colors.transparent,
           body: Center(
               child: Material(
                 elevation: 20,
@@ -26,11 +26,12 @@ class Container1 extends StatelessWidget {
                     splashColor: Colors.white,
                     child: Ink.image(
                       image: const AssetImage('assets/151.png'),
-                      height: 200,
-                      width: 200,
+                      height: 100,
+                      width: 100,
                       fit: BoxFit.cover,
                     )),
               )),
-        ));
+        )
+    );
   }
 }

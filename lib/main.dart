@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'bottombar/homepage.dart';
-import 'bottombar/services.dart';
 
 void main() {
   runApp(const MyApp());

@@ -1,9 +1,10 @@
 import 'package:dubai_app/homepage/home_container/container1.dart';
 import 'package:dubai_app/homepage/home_container/container3.dart';
-import 'package:dubai_app/homepage/home_container/home_container.dart';
+import 'package:dubai_app/homepage/home_container/container6.dart';
 import 'package:flutter/material.dart';
-
 import '../homepage/home_container/container2.dart';
+import '../homepage/home_container/container4.dart';
+import '../homepage/home_container/container5.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -15,7 +16,7 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.white,
+      backgroundColor: const Color(0xFF42A5F5),
       body: ListView(
         children: [
           SafeArea(
@@ -23,21 +24,20 @@ class _HomePageState extends State<HomePage> {
               if (constraints.maxWidth < 768) {
                 return Column(
                   children: const [
+                    SizedBox(height: 10),
                     Container1(),
                     SizedBox(
-                      height: 1,
+                      height: 10,
                     ),
-                     Container2(),
-                     Container3(),
-                     SizedBox(
-                      height: 1,
-                    ),
-                     SizedBox(
-                      height: 1,
-                    ),
-                     Container2(),
-                     Container2(),
-                     Container3(),
+                    Container2(),
+                    SizedBox(height: 10),
+                    Container3(),
+                    SizedBox(height: 10),
+                    Container4(),
+                    SizedBox(height: 10),
+                    Container5(),
+                    SizedBox(height: 10),
+                    Container6(),
                   ],
                 );
               } else {
@@ -71,7 +71,11 @@ class _HomePageState extends State<HomePage> {
               MaterialPageRoute(
                   builder: (BuildContext context) => const HomePage()));
         },
-        child: const Icon(Icons.send),
+        backgroundColor: Colors.black,
+        child: const ImageIcon(
+          AssetImage("assets/police eye.png"),
+          size: 60,
+        ),
       ),
       floatingActionButtonLocation:
           FloatingActionButtonLocation.miniCenterFloat,
@@ -86,37 +90,38 @@ class _HomePageState extends State<HomePage> {
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: <Widget>[
             IconButton(
-              icon: const Icon(
-                Icons.menu,
-                color: Colors.white,
+              icon: const ImageIcon(
+                AssetImage("assets/home.png"),
+                size: 40,
+              ),
+              onPressed: () {
+                (Navigator.push(
+                    context, MaterialPageRoute(
+                    builder:(context) => const HomePage())));
+              },
+            ),
+            IconButton(
+            icon: const ImageIcon(
+            AssetImage("assets/services.png"),
+            size: 40,
+            ),
+            onPressed: () {
+            (Navigator.push(
+            context, MaterialPageRoute(
+            builder:(context) => const Container5())));
+              },
+            ),
+            IconButton(
+              icon: const ImageIcon(
+                AssetImage("assets/contact.png"),
+                size: 40,
               ),
               onPressed: () {},
             ),
             IconButton(
-              icon: const Icon(
-                Icons.add_alert,
-                color: Colors.white,
-              ),
-              onPressed: () {},
-            ),
-            IconButton(
-              icon: const Icon(
-                Icons.print,
-                color: Colors.white,
-              ),
-              onPressed: () {},
-            ),
-            IconButton(
-              icon: const Icon(
-                Icons.people,
-                color: Colors.white,
-              ),
-              onPressed: () {},
-            ),
-            IconButton(
-              icon: const Icon(
-                Icons.headphones,
-                color: Colors.white,
+              icon: const ImageIcon(
+                AssetImage("assets/more.png"),
+                size: 40,
               ),
               onPressed: () {},
             ),

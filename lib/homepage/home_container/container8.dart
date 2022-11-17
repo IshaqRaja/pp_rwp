@@ -9,10 +9,10 @@ class Container8 extends StatelessWidget {
       width: 500,
       height: 180,
       decoration: BoxDecoration(
-        image: const DecorationImage(
-          image: AssetImage('assets/image1.jpg'),
-          //fit: BoxFit.fitWidth,
-        ),
+        // image: const DecorationImage(
+        //   image: AssetImage('assets/image1.jpg'),
+        //   //fit: BoxFit.fitWidth,
+        // ),
         // gradient: const LinearGradient(
         //   colors: [Colors.red, Colors.pink],
         // ),
