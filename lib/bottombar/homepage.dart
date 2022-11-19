@@ -5,6 +5,7 @@ import 'package:flutter/material.dart';
 import '../homepage/home_container/container2.dart';
 import '../homepage/home_container/container4.dart';
 import '../homepage/home_container/container5.dart';
+import '../services/services.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -95,20 +96,18 @@ class _HomePageState extends State<HomePage> {
                 size: 40,
               ),
               onPressed: () {
-                (Navigator.push(
-                    context, MaterialPageRoute(
-                    builder:(context) => const HomePage())));
+                (Navigator.push(context,
+                    MaterialPageRoute(builder: (context) => const HomePage())));
               },
             ),
             IconButton(
-            icon: const ImageIcon(
-            AssetImage("assets/services.png"),
-            size: 40,
-            ),
-            onPressed: () {
-            (Navigator.push(
-            context, MaterialPageRoute(
-            builder:(context) => const Container5())));
+              icon: const ImageIcon(
+                AssetImage("assets/services.png"),
+                size: 40,
+              ),
+              onPressed: () {
+                (Navigator.push(context,
+                    MaterialPageRoute(builder: (context) => const Services())));
               },
             ),
             IconButton(

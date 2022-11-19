@@ -124,7 +124,7 @@ packages:
     source: sdk
     version: "0.0.0"
   flutter_titled_container:
-    dependency: "direct dev"
+    dependency: "direct main"
     description:
       name: flutter_titled_container
       url: "https://pub.dartlang.org"
